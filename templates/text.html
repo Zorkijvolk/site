@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Тест</h1>
+<form action="" method="post">
+    {{ form.hidden_tag() }}
+    <p>
+        {{ form.name.label }}<br>
+        {{ form.name(class="form-control") }}<br>
+        {% for error in form.name.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>
+        {{ form.task_1.label }}<br>
+        {{ form.task_1(class="form-control") }}<br>
+        {% for error in form.task_1.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>
+        {{ form.task_2.label }}<br>
+        {{ form.task_2(class="form-control") }}<br>
+        {% for error in form.task_2.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>
+        {{ form.task_3.label }}<br>
+        {{ form.task_3(class="form-control") }}<br>
+        {% for error in form.task_3.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>
+        {{ form.task_4.label }}<br>
+        {{ form.task_4(class="form-control") }}<br>
+        {% for error in form.task_4.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>
+        {{ form.task_5.label }}<br>
+        {{ form.task_5(class="form-control") }}<br>
+        {% for error in form.task_5.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>
+        {{ form.task_6.label }}<br>
+        {{ form.task_6(class="form-control") }}<br>
+        {% for error in form.task_6.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>
+        {{ form.task_7.label }}<br>
+        {{ form.task_7(class="form-control") }}<br>
+        {% for error in form.task_7.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>
+        {{ form.task_8.label }}<br>
+        {{ form.task_8(class="form-control") }}<br>
+        {% for error in form.task_8.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>{{ form.submit(type="submit", class="btn btn-primary") }}</p>
+    {{message}}
+</form>
+{% endblock %}

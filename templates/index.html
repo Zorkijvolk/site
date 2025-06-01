@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if current_user.is_authenticated %}
+    {% if not current_user.passed %}
+        <div>
+            <a href="/test" class="btn btn-warning">
+                Пройти тест
+            </a>
+        </div>
+    {% endif %}
+    {% if current_user.is_admin %}
+        <h1 style="text-align: center;">Passed</h1>
+        {% for item in users %}
+            <div>
+                <a href="/answer/{{ item['id'] }}" class="btn btn-warning">
+                    {{item["name"]}}
+                </a>
+            </div>
+        {% endfor %}
+
+        <h1>RESULTS</h1>
+        {% for item in jobs%}
+            <h3> {{item.passed}} </h3>
+            <table>
+                <tr>
+                    <td>Task1</td>
+                    <td> {{ item.task_1 }} </td>
+                </tr>
+                <tr>
+                    <td>Task2</td>
+                    <td> {{ item.task_2 }} </td>
+                </tr>
+                <tr>
+                    <td>Task3</td>
+                    <td> {{ item.task_3 }} </td>
+                </tr>
+                <tr>
+                    <td>Task4</td>
+                    <td> {{ item.task_4 }} </td>
+                </tr>
+                <tr>
+                    <td>Task5</td>
+                    <td> {{ item.task_5 }} </td>
+                </tr>
+                <tr>
+                    <td>Task6</td>
+                    <td> {{ item.task_6 }} </td>
+                </tr>
+                <tr>
+                    <td>Task7</td>
+                    <td> {{ item.task_7 }} </td>
+                </tr>
+                <tr>
+                    <td>Task8</td>
+                    <td> {{ item.task_8 }} </td>
+                </tr>
+            </table>
+        {% endfor %}
+    {% endif %}
+{% endif %}
+{% endblock %}

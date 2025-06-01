@@ -1,0 +1,60 @@
+.general_content_holder {
+    margin: 2vh 3vw;
+}
+
+.level4 {
+    color: lime;
+    margin-left: 20px;
+}
+
+.list {
+    margin-left: 40px;
+}
+
+.table {
+    width: 80vw;
+    height: 50px;
+    margin: 2vw 15px;
+    border: gray solid 2px;
+}
+
+.table_head {
+    background-color: silver;
+}
+
+.table_data {
+    background-color: #8686fc;
+}
+
+form.login_form {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 450px;
+    background-color: #ffcc00;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+}
+textarea {
+    width: 90%; /* Ширина поля в процентах */
+    height: 25px; /* Высота поля в пикселах */
+    resize: none;
+    font-size: 15pt;
+}
+
+
+table {
+  width: 650px;
+  border-collapse: collapse;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+td {
+  text-align: left;
+	padding: 10px;
+}
+ th {
+  text-align: center;
+  padding: 10px;
+ }

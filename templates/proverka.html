@@ -1,0 +1,155 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1> {{ user["name"] }} </h1>
+
+<table>
+    <tr>
+        <td>Task1</td>
+        <td> {{ user["task_1"] }} </td>
+    </tr>
+</table>
+<div>
+    <a href="/edit/{{ job.id }}/1/1" class="btn btn-warning">
+        Верно
+    </a>
+    <a href="/edit/{{ job.id }}/1/2" class="btn btn-warning">
+        Неверно
+    </a>
+    <a href="/edit/{{ job.id }}/1/0" class="btn btn-warning">
+        Нет
+    </a>
+</div>
+
+<table>
+    <tr>
+        <td>Task2</td>
+        <td> {{ user["task_2"] }} </td>
+    </tr>
+</table>
+<div>
+    <a href="/edit/{{ job.id }}/2/1" class="btn btn-warning">
+        Верно
+    </a>
+    <a href="/edit/{{ job.id }}/2/2" class="btn btn-warning">
+        Неверно
+    </a>
+    <a href="/edit/{{ job.id }}/2/0" class="btn btn-warning">
+        Нет
+    </a>
+</div>
+
+<table>
+    <tr>
+        <td>Task3</td>
+        <td> {{ user["task_3"] }} </td>
+    </tr>
+</table>
+<div>
+    <a href="/edit/{{ job.id }}/3/1" class="btn btn-warning">
+        Верно
+    </a>
+    <a href="/edit/{{ job.id }}/3/2" class="btn btn-warning">
+        Неверно
+    </a>
+    <a href="/edit/{{ job.id }}/3/0" class="btn btn-warning">
+        Нет
+    </a>
+</div>
+
+<table>
+    <tr>
+        <td>Task4</td>
+        <td> {{ user["task_4"] }} </td>
+    </tr>
+</table>
+<div>
+    <a href="/edit/{{ job.id }}/4/1" class="btn btn-warning">
+        Верно
+    </a>
+    <a href="/edit/{{ job.id }}/4/2" class="btn btn-warning">
+        Неверно
+    </a>
+    <a href="/edit/{{ job.id }}/4/0" class="btn btn-warning">
+        Нет
+    </a>
+</div>
+
+<table>
+    <tr>
+        <td>Task5</td>
+        <td> {{ user["task_5"] }} </td>
+    </tr>
+</table>
+<div>
+    <a href="/edit/{{ job.id }}/5/1" class="btn btn-warning">
+        Верно
+    </a>
+    <a href="/edit/{{ job.id }}/5/2" class="btn btn-warning">
+        Неверно
+    </a>
+    <a href="/edit/{{ job.id }}/5/0" class="btn btn-warning">
+        Нет
+    </a>
+</div>
+
+<table>
+    <tr>
+        <td>Task6</td>
+        <td> {{ user["task_6"] }} </td>
+    </tr>
+</table>
+<div>
+    <a href="/edit/{{ job.id }}/6/1" class="btn btn-warning">
+        Верно
+    </a>
+    <a href="/edit/{{ job.id }}/6/2" class="btn btn-warning">
+        Неверно
+    </a>
+    <a href="/edit/{{ job.id }}/6/0" class="btn btn-warning">
+        Нет
+    </a>
+</div>
+
+<table>
+    <tr>
+        <td>Task7</td>
+        <td> {{ user["task_7"] }} </td>
+    </tr>
+</table>
+<div>
+    <a href="/edit/{{ job.id }}/7/1" class="btn btn-warning">
+        Верно
+    </a>
+    <a href="/edit/{{ job.id }}/7/2" class="btn btn-warning">
+        Неверно
+    </a>
+    <a href="/edit/{{ job.id }}/7/0" class="btn btn-warning">
+        Нет
+    </a>
+</div>
+
+<table>
+    <tr>
+        <td>Task8</td>
+        <td> {{ user["task_8"] }} </td>
+    </tr>
+</table>
+<div>
+    <a href="/edit/{{ job.id }}/8/1" class="btn btn-warning">
+        Верно
+    </a>
+    <a href="/edit/{{ job.id }}/8/2" class="btn btn-warning">
+        Неверно
+    </a>
+    <a href="/edit/{{ job.id }}/8/0" class="btn btn-warning">
+        Нет
+    </a>
+</div>
+<div>
+    <a href="/">
+        BACK
+    </a>
+</div>
+
+{% endblock %}
